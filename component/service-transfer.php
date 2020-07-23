@@ -1,4 +1,4 @@
-<div class="service-transfer">
+<div id="in-home-service" class="service-transfer">
     <div class="component-title">
         Dịch vụ tận nơi
     </div>

@@ -1,4 +1,4 @@
-<div class="service-office">
+<div id="in-store-service" class="service-office">
     <div class="component-title">
         Dịch vụ tại chỗ
     </div>
