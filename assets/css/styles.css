@@ -1,0 +1,160 @@
+.component-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: var(--primary);
+    font-size: 28px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.component-title::after {
+    content: "";
+    background-image: url(/assets/images/line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+}
+
+.component-box-office {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+}
+
+.office-box {
+    border-radius: 10px;
+    background-color: var(--light);
+    padding: 5px;
+}
+
+.office-box img {
+    width: 230px;
+    height: 100%;
+    display: block;
+    margin: 15px auto;
+    object-fit: contain;
+}
+
+
+.office-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.office-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    box-sizing: border-box;
+    color: var(--dark);
+}
+
+.office-footer a i {
+    margin-left: 5px;
+}
+
+.office-footer a  + a {
+    width: 40%;
+    border-left: 1px solid var(--light);
+    padding: 15px;
+    color: var(--primary)
+}
+
+
+.service-transfer {
+    margin: 30px 0;
+    background-color: var(--light);
+    padding: 20px;
+    background-image: url(/assets/images/transfer-backgroud.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.component-box-transfer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-gap: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.transfer-box {
+    position: relative;
+}
+
+.transfer-box + .transfer-box::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background-color: var(--light);
+}
+
+
+.transfer-link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--dark)
+}
+
+
+.transfer-link span {
+    margin: 15px 0 0;
+    padding: 0 10px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.sub-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: var(--dark);
+    font-size: 19px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin: 10px auto;
+    user-select: none;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.online:hover {
+    background-color: var(--dark)
+}
