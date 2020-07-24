@@ -1,9 +1,6 @@
 /* Slider */
-.slider {
-}
-
 .slider img {
-    border: 2px solid #fff
+    margin: 0 2px
 }
 
 .slider a {

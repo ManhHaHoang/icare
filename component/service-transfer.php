@@ -52,12 +52,14 @@
             </a>
         </div>
     </div>
-    <div class="sub-title">
-        Tư vấn - Sửa chữa - Phục vụ - Chân thanh
-    </div>
-    <div class="link">
-        <span class="online">
-            Đặt lịch sửa chữa online
-        </span>
+    <div id="schedule">
+        <div class="sub-title">
+            Tư vấn - Sửa chữa - Phục vụ - Chân thanh
+        </div>
+        <div class="link">
+            <span class="online">
+                Đặt lịch sửa chữa online
+            </span>
+        </div>
     </div>
 </div>
