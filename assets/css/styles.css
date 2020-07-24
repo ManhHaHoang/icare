@@ -147,6 +147,7 @@
     padding: 15px 25px;
     background-color: var(--primary);
     color: var(--white);
+    border: 2px solid var(--white);
     text-transform: uppercase;
     border-radius: 50px;
     margin: 10px auto;
@@ -159,6 +160,31 @@
     background-color: var(--dark)
 }
 
+.btn-focus {
+    animation-name: animation;
+    animation-duration: 550ms;
+    animation-timing-function: cubic-bezier(.07,2.02,.67,.57);
+    animation-iteration-count: 5;
+    animation-play-state: running;
+}
+
+@keyframes animation {
+    0% {
+        background-color: var(--primary);
+        color: var(--white);
+        border: 2px solid var(--white);
+    }
+    50.0% {
+        background-color: var(--white);
+        color: var(--primary);
+        border: 2px solid var(--primary);
+    }
+    100.0% {
+        background-color: var(--primary);
+        color: var(--white);
+        border: 2px solid var(--white);
+    }
+}
 
 .component-box-training {
     display: flex;

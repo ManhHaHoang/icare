@@ -238,6 +238,10 @@
     .search-header input {
         height: 34px;
     }
+
+    .footer-logo img {
+        height: 100px;
+    }
 }
 
 @media (max-width: 324px) {

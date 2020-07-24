@@ -5,25 +5,25 @@
                 <a class="menu-link" href="/">Trang chủ</a>
             </li>
             <li class="menu-item dropdown">
-                <a class="menu-link" href="/">Dịch vụ tại chỗ</a>
+                <a class="menu-link" href="/in-store">Dịch vụ tại chỗ</a>
             </li>
             <li class="menu-item dropdown">
-                <a class="menu-link" href="/">Dịch vụ tại nơi</a>
+                <a class="menu-link" href="/in-home">Dịch vụ tại nơi</a>
             </li>
             <li class="menu-item dropdown">
-                <a class="menu-link" href="/">Dạy nghề</a>
+                <a class="menu-link" href="/training">Dạy nghề</a>
             </li>
             <li class="menu-item dropdown">
-                <a class="menu-link" href="/">Bán hàng</a>
+                <a class="menu-link" href="/sales">Bán hàng</a>
             </li>
             <li class="menu-item dropdown">
-                <a class="menu-link" href="/">Đặt lịch sửa</a>
+                <span id="book-schedule" class="menu-link" >Đặt lịch sửa</span>
             </li>
             <li class="menu-item ">
-                <a class="menu-link" href="/" class="check-segment">Tra cứu phiếu</a>
+                <span id="segment-order" class="menu-link" class="check-segment">Tra cứu phiếu</span>
             </li>
             <li class="menu-item ">
-                <a class="menu-link" href="/">Hoạt động</a>
+                <span id="action-link" class="menu-link" >Hoạt động</span>
             </li>
             <li class="menu-item ">
                 <a class="menu-link" href="/contact">Liên hệ</a>

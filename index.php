@@ -30,7 +30,7 @@
         dots: true,
         centerMode: true,
         slidesToShow: 3,
-        autoplay: !1,
+        autoplay: 1,
         autoplaySpeed: 2000,
         variableWidth: true,
         responsive: [
