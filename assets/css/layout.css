@@ -424,7 +424,7 @@ select:-moz-focusring {
 }
 
 .site-w {
-    max-width: 980px;
+    max-width: 1080px;
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
@@ -568,6 +568,7 @@ select:-moz-focusring {
 
 .search-header {
     align-items: stretch;
+    width: 300px;
 }
 
 .search-header input {
@@ -620,6 +621,10 @@ select:-moz-focusring {
     object-fit: contain;
 }
 
+#navigation {
+    border-bottom: 1px solid var(--light);
+}
+
 .navigation-list {
     display: flex;
     justify-content: space-between;
@@ -628,7 +633,6 @@ select:-moz-focusring {
     padding: 0;
     list-style: none;
 }
-
 
 .menu-link {
     padding: 7px;
@@ -647,8 +651,8 @@ select:-moz-focusring {
 .menu-link:after {
     content: "";
     position: absolute;
-    height: 2px;
-    bottom: 0;
+    height: 3px;
+    bottom: -2px;
     left: 0;
     right: 0;
     background-color: var(--primary);
@@ -663,6 +667,7 @@ select:-moz-focusring {
     -ms-transition: all .3s cubic-bezier(.175,.885,.32,1.275);
     -o-transition: all .3s cubic-bezier(.175,.885,.32,1.275);
     transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+    z-index: 15;
 }
 
 .menu-item.active .menu-link::after,
@@ -890,17 +895,6 @@ select:-moz-focusring {
     position: relative;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-.sigle-page::before {
-    content: "";
-    height: 2px;
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    background-color: var(--light);
 }
 
 .sigle-page .site-w {

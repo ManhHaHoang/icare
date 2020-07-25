@@ -3,12 +3,9 @@ $(document).ready(function() {
         $('body').toggleClass('open-menu');
     });
 
-    $('#book-schedule').click(function() {
-        $('html, body').animate({scrollTop: $('#in-home-service').offset().top}, 700);
-        $('.online').addClass('btn-focus');
-        setTimeout(function() {
-            $('.online').removeClass('btn-focus');
-        }, 3000);
+    $('#book-schedule').click(function(event) {
+        event.preventDefault();
+        $('body').addClass('open-repair');
     });
 
 
@@ -16,13 +13,12 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('#action').offset().top}, 700);
     });
 
-
-
-    $('.online, .close-popup').click(function() {
-        $('body').addClass('open-repair');
+    $('.menu-link').click(function() {
+        $(this).parent().addClass('active').siblings().removeClass('active');
     });
 
-    $('#segment-order, .close-popup').click(function() {
+    $('#segment-order, .close-popup').click(function(event) {
+        event.preventDefault();
         $('body').addClass('open-segment');
     });
 

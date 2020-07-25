@@ -1,7 +1,33 @@
+<?php
+$menuItems = [
+    ["", "", "Trang chủ"],
+    ["dich-vu-tai-cho","", "Dịch vụ tại chỗ"],
+    ["dich-vu-tai-noi","", "Dịch vụ tại nơi"],
+    ["day-nghe","", "Dạy nghề"],
+    ["ban-hang","", "Bán hàng"],
+    ["dat-lich-sua","book-schedule", "Đặt lịch sửa"],
+    ["tra-cuu-phieu","segment-order", "Tra cứu phiếu"],
+    ["hoat-dong","", "Hoạt động"],
+    ["lien-he","", "Liên hệ"],
+];
+$url = $_SERVER['REQUEST_URI'];
+$url = ltrim($url, '/');
+?>
+
 <nav id="navigation">
     <div class="site-w">
         <ul class="navigation-list">
-            <li class="menu-item active">
+            <?php
+            foreach ($menuItems as $value) { ?>
+                <li class="menu-item <?= $url == $value[0] ? 'active' : '' ?>">
+                    <a id="<?= $value[1] ?>" class="menu-link" href="/<?= $value[0] ?>">
+                        <?= $value[2] ?>
+                    </a>
+                </li>
+            <?php    }
+            ?>
+
+            <!-- <li class="menu-item active">
                 <a class="menu-link" href="/">Trang chủ</a>
             </li>
             <li class="menu-item dropdown">
@@ -27,7 +53,7 @@
             </li>
             <li class="menu-item ">
                 <a class="menu-link" href="/contact">Liên hệ</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
-    </div>
+</div>
