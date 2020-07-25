@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('.open-menu-icon, .backgroud-transparent').click(function() {
         $('body').toggleClass('open-menu');
@@ -27,8 +26,14 @@ $(document).ready(function() {
         $('body').addClass('open-segment');
     });
 
+
+
+    $('#login-button').click(function() {
+        $('body').toggleClass('show-login');
+    });
+
     $('.close-popup').click(function() {
-        $('body').removeClass('open-segment open-repair');
+        $('body').removeClass('open-segment open-repair show-login');
     });
 
 

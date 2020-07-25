@@ -204,6 +204,122 @@
         </form>
     </div>
 </div>
+<div id="account-login" class="login-popup-wrapper">
+    <input class="login-input" type="radio" id="user-signin" name="loginForm" checked>
+    <input class="login-input" type="radio" id="user-signup" name="loginForm">
+    <input class="login-input" type="radio" id="user-forget" name="loginForm">
+    <div class="login-content">
+        <div class="user-label">
+            <label for="user-signin">Đăng nhập</label>
+            <label for="user-signup">Đăng ký</label>
+            <label for="user-forget">Lấy lại mật khẩu</label>
+        </div>
+        <form class="form-visible" id="Login" role="form" method="post" action="">
+            <div class="social-login">
+                <p class="tip">Đăng nhập bằng</p>
+                <a href="https://facebook.com/manhha.design" class="button primary"><span>Tài khoản </span>Facebook</a>
+                <a href="https://youtube.com/c/manhhahoang" class="button secondary"><span>Tài khoản </span> Google</a>
+            </div>
+
+            <div class="user-heading">
+                hoặc đăng nhập bằng tài khoản iCare.com
+            </div>
+
+            <div class="login-box">
+                <div class="form-group">
+                    <label class="control-label email">Email <span class="require-field">*</span></label>
+                    <input name="email" type="email" class="form-control" autocomplete="off" placeholder="Email">
+                    <div class="error-message error-email"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label password">Mật khẩu <span class="require-field">*</span></label>
+                    <input type="password" name="password" class="form-control" autocomplete="off"
+                        placeholder="Mật khẩu">
+                    <div class="error-message error-password"></div>
+                </div>
+            </div>
+            <div class="login-box user-footer">
+                <button type="submit" class="button primary">
+                    Đăng nhập
+                </button>
+                <label for="user-forget"><span>Quên mật khẩu</span></label>
+            </div>
+        </form>
+        <form class="form-visible" id="Registration" role="form" method="post" action="" novalidate>
+            <div class="error-message error-register"></div>
+            <div class="login-box">
+                <div class="form-group">
+                    <label class="control-label">Họ và tên <span class="require-field">*</span></label>
+                    <div class="fullname">
+
+                        <input type="text" name="fullname" class="form-control" placeholder="Họ tên" required="">
+                    </div>
+                    <div class="error-message error-fullname"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Giới tính</label>
+                    <select class="form-control" name="gender">
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                    </select>
+                    <div class="error-message error-fullname"></div>
+                </div>
+            </div>
+            <div class="login-box">
+                <div class="form-group">
+                    <label class="control-label">Mật khẩu <span class="require-field">*</span></label>
+                    <input type="password" name="password" class="form-control" placeholder="Mật khẩu" required="">
+                    <div class="error-message error-password"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Nhập lại mật khẩu <span class="require-field">*</span></label>
+                    <input type="password" name="password_confirm" class="form-control" placeholder="Nhập lại mật khẩu"
+                        required="">
+                    <div class="error-message error-confirm-password"></div>
+                </div>
+            </div>
+            <div class="login-box">
+                <div class="form-group">
+                    <label class="control-label">Điện thoại <span class="require-field">*</span></label>
+                    <input type="text" name="phone" class="form-control" placeholder="Điện thoại di động" required="">
+                    <div class="error-message error-phone"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email <span class="require-field">*</span></label>
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                    <div class="error-message error-email"></div>
+                </div>
+            </div>
+            <div class="login-box user-footer">
+                <button type="submit" class="button primary">
+                    Đăng ký
+                </button>
+                <label for="user-signin" class="signin-link">
+                    <span>Đăng nhập</span>
+                </label>
+            </div>
+        </form>
+        <form class="form-visible" id="ForgotPassword" role="form" method="post" action="">
+            <div class="form-group">
+                <label class="control-label email" style="display: block"><b>Nhập số điện thoại của bạn hoặc email khôi
+                        phục</b> <span class="require-field">*</span></label>
+                <input name="email" type="email" class="form-control" autocomplete="off">
+                <div class="error-message error-email"></div>
+            </div>
+            <div class="login-box user-footer" style="padding-left: 0">
+                <button type="submit" class="button success">
+                    Gửi Yêu Cầu
+                </button>
+                <label for="user-signin" style="margin-left: 10px;"><span>Đăng nhập</span></label>
+            </div>
+        </form>
+        <span class="close-tab close-popup">
+            &times;
+        </span>
+    </div>
+    <div class="login-popup-entry" onclick="closeLogin()"></div>
+</div>
 <div class="backgroud-transparent"></div>
 <script type="text/javascript" src="/assets/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="/assets/js/slick.js?v=<?=$ver?>"></script>

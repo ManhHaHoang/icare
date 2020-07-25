@@ -15,7 +15,7 @@
                     <i class="icon-search"></i>
                 </button>
             </form>
-            <div class="login-box">
+            <div id="login-button">
                 <img src="/images/user.svg" alt="">
                 <span class="login-txt">Đăng nhập / Đăng ký</span>
             </div>
