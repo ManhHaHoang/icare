@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
 <?php
- $ver = time();
+$ver = time();
 ?>
 <head>
-    <title>Dịch vụ tại nơi</title>
+    <title>Dịch vụ tại chỗ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="icon" href="/images/favicon.png" sizes="16x16 32x32" type="image/png">
@@ -17,7 +17,18 @@
     <?php include 'common/header.php' ?>
     <?php include 'common/navigation.php' ?>
     <main id="site-main" class="sigle-page">
-
+        <div class="site-w">
+            <ul class="breadcrumb">
+                <li>Trang chủ</li>
+                <li>
+                    <a href="#">
+                        Dịch vụ tại nơi
+                    </a>
+                </li>
+            </ul>
+            <?php include 'common/aside.php';?>
+            <?php include 'common/page.php';?>
+        </div>
     </main>
     <?php include 'common/footer.php';?>
 </body>

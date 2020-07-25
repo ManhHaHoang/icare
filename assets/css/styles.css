@@ -309,3 +309,165 @@
     color: var(--white);
     margin-right: 7px;
 }
+
+
+.sidebar-list {
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-item + .sidebar-item {
+    margin-top: 30px;
+}
+.sidebar-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-image {
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sidebar-link img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sidebar-content {
+    width: calc(100% - 75px);
+    padding-left: 15px;
+    font-size: 12px;
+    color: var(--dark);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.sidebar-link:hover .sidebar-content {
+    color: var(--primary)
+}
+
+.article-list {
+    text-align: justify;
+}
+
+
+.page-title {
+    color: var(--black);
+    font-size: 17px;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    position: relative;
+}
+
+.page-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 12px;
+    width: 100%;
+    background-image: url(/assets/images/title-line.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+
+.article-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.article-item + .article-item  {
+    margin-top: 25px;
+}
+
+.article-image {
+    width: 210px;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.article-content {
+    width: calc(100% - 210px);
+    padding-left: 25px;
+    color: var(--black);
+    cursor: default;
+}
+
+.article-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.article-content li + li {
+    margin-top: 5px;
+}
+
+.article-content li:last-child {
+    margin-top: 15px;
+}
+
+.article-title {
+    font-size: 15px;
+    margin: 0 0 10px;
+    padding: 0;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.article-desc {
+    font-size: 12px;
+}
+
+
+.prev a {
+    transform: rotate(180deg);
+}
+
+
+.related-list,
+.related-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.related-list li {
+    background-image: url(/assets/images/related-bg.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 30px;
+    margin-bottom: 7px;
+}
+
+
+#single-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

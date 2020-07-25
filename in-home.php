@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <?php
- $ver = time();
+$ver = time();
 ?>
 <head>
     <title>Dịch vụ tại chỗ</title>
@@ -17,7 +17,18 @@
     <?php include 'common/header.php' ?>
     <?php include 'common/navigation.php' ?>
     <main id="site-main" class="sigle-page">
-
+        <div class="site-w">
+            <ul class="breadcrumb">
+                <li>Trang chủ</li>
+                <li>
+                    <a href="#">
+                        Dịch vụ tại chỗ
+                    </a>
+                </li>
+            </ul>
+            <?php include 'common/aside.php';?>
+            <?php include 'common/page.php';?>
+        </div>
     </main>
     <?php include 'common/footer.php';?>
 </body>
