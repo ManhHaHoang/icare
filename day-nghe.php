@@ -24,7 +24,7 @@
                     <li><a href="/">Trang chủ</a></li>
                     <li>
                         <a href="#">
-                            Hoạt động
+                            Dạy nghề
                         </a>
                     </li>
                 </ul>
@@ -32,7 +32,7 @@
             <?php include 'common/aside.php';?>
             <div class="page">
                 <h1 class="page-title">
-                    Hoạt động
+                    Dạy nghề
                 </h1>
                 <section class="article-list">
                     Đang cập nhật nội dung

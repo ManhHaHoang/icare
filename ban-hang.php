@@ -30,6 +30,14 @@
                 </ul>
             </div>
             <?php include 'common/aside.php';?>
+            <div class="page">
+                <h1 class="page-title">
+                    Bán hàng
+                </h1>
+                <section class="article-list">
+                    Đang cập nhật nội dung
+                </section>
+            </div>
         </div>
     </main>
     <?php include 'common/footer.php';?>
