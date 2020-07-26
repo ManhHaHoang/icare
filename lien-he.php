@@ -1,3 +1,6 @@
+<?php
+ $ver = time();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +9,7 @@
     <link rel="icon" href="/images/favicon.png" sizes="16x16 32x32" type="image/png">
     <link rel="stylesheet" href="/assets/css/layout.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=<?=$ver?>">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>

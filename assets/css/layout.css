@@ -642,6 +642,17 @@ select:-moz-focusring {
     list-style: none;
 }
 
+.menu-item {
+    position: relative;
+}
+
+.dropdown-menu,
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .menu-link {
     padding: 7px;
     text-transform: uppercase;
@@ -653,6 +664,17 @@ select:-moz-focusring {
     align-items: center;
     cursor: pointer;
     user-select: none;
+}
+
+.menu-link i {
+    transform: rotate(90deg);
+    margin-left: 5px;
+    transition: all 350ms ease;
+}
+
+.menu-link:hover i {
+    transform: rotate(270deg);
+    margin-left: 5px;
 }
 
 
@@ -690,6 +712,21 @@ select:-moz-focusring {
 
 .menu-item.active .menu-link {
     color: var(--primary)
+}
+
+.dropdown-item + .dropdown-item {
+    border-top: 1px solid var(--light)
+}
+
+.dropdown-link {
+    padding: 10px 15px;
+    display: block;
+    transition: all 350ms ease;
+    color: var(--dark);
+}
+
+.dropdown-link:hover {
+    color: var(--dark);
 }
 
 

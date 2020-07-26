@@ -18,10 +18,13 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('#action').offset().top}, 700);
     });
 
+    $('.open-search-icon').click(function() {
+        $('body').toggleClass('open-search');
+    });
+
     $('.menu-link').click(function() {
         $(this).parent().addClass('active').siblings().removeClass('active');
     });
-
 
 
     $('#login-button').click(function() {
