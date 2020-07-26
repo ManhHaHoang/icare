@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include '/common/header.php';?>
-    <?php include '/common/navigation.php';?>
+    <?php include 'common/header.php';?>
+    <?php include 'common/navigation.php';?>
     <main id="site-main" class="sigle-page">
         <div class="site-w">
             <div class="breadcrumb-box">
@@ -48,6 +48,6 @@
 
         </div>
     </main>
-    <?php include '/common/footer.php';?>
+    <?php include 'common/footer.php';?>
 </body>
 </html>
