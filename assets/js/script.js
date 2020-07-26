@@ -5,7 +5,12 @@ $(document).ready(function() {
 
     $('#book-schedule').click(function(event) {
         event.preventDefault();
-        $('body').addClass('open-repair');
+        $('body').addClass('open-repair').removeClass('open-menu');
+    });
+
+    $('#segment-order').click(function(event) {
+        event.preventDefault();
+        $('body').addClass('open-segment').removeClass('open-menu');
     });
 
 
@@ -17,18 +22,13 @@ $(document).ready(function() {
         $(this).parent().addClass('active').siblings().removeClass('active');
     });
 
-    $('#segment-order, .close-popup').click(function(event) {
-        event.preventDefault();
-        $('body').addClass('open-segment');
-    });
-
 
 
     $('#login-button').click(function() {
         $('body').toggleClass('show-login');
     });
 
-    $('.close-popup').click(function() {
+    $('.close-popup, .btn-cancel').click(function() {
         $('body').removeClass('open-segment open-repair show-login');
     });
 

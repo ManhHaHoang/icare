@@ -11,6 +11,41 @@
 <body>
     <?php include '/common/header.php';?>
     <?php include '/common/navigation.php';?>
+    <main id="site-main" class="sigle-page">
+        <div class="site-w">
+            <div class="breadcrumb-box">
+                <ul class="breadcrumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li>
+                        <a href="#">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="page-title">
+                Liên hệ
+            </h1>
+            <section id="single-content" class="article-list">
+                <div id="lipsum">
+                    <h2>TIỆN ÍCH TẠI HỆ THỐNG iCARE CENTER</h2>
+                    <p>Với phương châm "Luôn giữ niềm tin nơi khách hàng", Quý khách sẽ được trải nghiệm dịch vụ chăm sóc khác biệt:</p>
+                    <ul>
+                        <li>Giữ xe miễn phí</li>
+                        <li>Wifi miễn phí</li>
+                        <li>Nhân viên thân thiện, nhiệt tình</li>
+                        <li>Được phục vụ trà, cafe, tivi, báo, tạp chí, khăn ướt miễn phí</li>
+                        <li>Hướng dẫn dùng thiết bị, phần mềm miễn phí</li>
+                        <li>Thanh toán hóa đơn trả góp, điện, nước, internet, nạp tiền điện thoại</li>
+                    </ul>
+                    <?php include 'component/address.php';?>
+                    <p>
+                        <img src="/images/map.png" alt="">
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
     <?php include '/common/footer.php';?>
 </body>
 </html>

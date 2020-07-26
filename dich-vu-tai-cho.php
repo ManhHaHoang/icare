@@ -18,14 +18,16 @@ $ver = time();
     <?php include 'common/navigation.php' ?>
     <main id="site-main" class="sigle-page">
         <div class="site-w">
-            <ul class="breadcrumb">
-                <li>Trang chủ</li>
-                <li>
-                    <a href="#">
-                        Dịch vụ tại nơi
-                    </a>
-                </li>
-            </ul>
+            <div class="breadcrumb-box">
+                <ul class="breadcrumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li>
+                        <a href="#">
+                            Dịch vụ tại nơi
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <?php include 'common/aside.php';?>
             <?php include 'common/page.php';?>
         </div>

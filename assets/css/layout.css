@@ -355,6 +355,13 @@ select:-moz-focusring {
     }
 }
 
+.breadcrumb-box {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
 .breadcrumb {
     padding: 0;
     list-style: none;
@@ -362,8 +369,9 @@ select:-moz-focusring {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
-    margin-bottom: 25px;
+    margin: 0;
     width: 100%;
+    white-space: nowrap;
 }
 
 .breadcrumb li + li::before {

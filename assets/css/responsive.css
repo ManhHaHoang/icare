@@ -5,6 +5,17 @@
     }
 }
 @media (max-width: 1024px) {
+
+    ::-webkit-scrollbar  {
+        display: none;
+    }
+
+    * {
+        scrollbar-color: transparent transparent;
+        scrollbar-width: none;
+    }
+
+
     #navigation {
         width: 300px;
         height: 100%;
@@ -263,5 +274,49 @@
     .open-menu .backgroud-transparent::before,
     .open-menu .backgroud-transparent::after {
         left: 280px
+    }
+}
+
+@media (max-width: 760px) {
+    .repair-content, .segment-order-form-content {
+        width: 94vw;
+        left: calc(50% - 47vw)
+    }
+
+    .form-item {
+        flex-wrap: wrap;
+    }
+
+    .form-body {
+        max-height: 84vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .form-body .form-control, .form-body select {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 4;
+    }
+    .page {
+        width: 100%;
+        order: 2;
+        padding: 0
+    }
+
+    ..article-image {
+        width: 150px;
+    }
+
+    .article-content {
+        width: calc(100% - 150px)
+    }
+
+    .article-desc {
+        height: 100px;
+        overflow: hidden;
     }
 }
