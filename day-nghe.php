@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <?php
- $ver = time();
+$ver = time();
 ?>
 <head>
     <title>iCare</title>
@@ -23,9 +23,7 @@
                 <ul class="breadcrumb">
                     <li><a href="/">Trang chủ</a></li>
                     <li>
-                        <a href="#">
-                            Dạy nghề
-                        </a>
+                        Dạy nghề
                     </li>
                 </ul>
             </div>

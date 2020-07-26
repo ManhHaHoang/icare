@@ -22,9 +22,7 @@ $ver = time();
                 <ul class="breadcrumb">
                     <li><a href="/">Trang chủ</a></li>
                     <li>
-                        <a href="#">
-                            Dịch vụ tại nơi
-                        </a>
+                        Dịch vụ tại nơi
                     </li>
                 </ul>
             </div>
